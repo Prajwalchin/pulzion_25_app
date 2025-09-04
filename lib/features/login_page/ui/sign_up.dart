@@ -1,4 +1,4 @@
-import 'package:csc_picker/csc_picker.dart';
+// import 'package:csc_picker/csc_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pulzion_25_app/constants/widgets/custom_buttons.dart';
@@ -214,59 +214,59 @@ class _SignUpState extends State<SignUp> {
                                   // margin: const EdgeInsets.all(8),
                                   padding: const EdgeInsets.only(top: 8),
 
-                                  child: CSCPicker(
-                                    flagState: CountryFlag.DISABLE,
-                                    defaultCountry: CscCountry.India,
-                                    selectedItemStyle:
-                                        AppStyles.NormalText().copyWith(
-                                      color: const Color.fromARGB(
-                                          255, 37, 169, 176),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 17,
-                                    ),
-                                    onCountryChanged: (country) {
-                                      setState(() {
-                                        //log(country.toString());
-                                        countryValue = country;
-                                        address = countryValue;
-                                      });
-                                    },
-                                    countryDropdownLabel: address,
-                                    dropdownItemStyle:
-                                        AppStyles.NormalText().copyWith(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 17,
-                                    ),
-                                    dropdownDialogRadius: 10.0,
-                                    countrySearchPlaceholder: address,
-                                    dropdownHeadingStyle: const TextStyle(
-                                      color: Color.fromARGB(255, 37, 169, 176),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 17,
-                                    ),
-                                    showCities: false,
-                                    showStates: false,
-                                    dropdownDecoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: [
-                                          Colors.black.withOpacity(0.6),
-                                          Colors.black.withOpacity(0.4),
-                                          Colors.black.withOpacity(0.4),
-                                        ],
-                                        begin: Alignment.centerLeft,
-                                        end: Alignment.centerRight,
-                                      ),
-                                      borderRadius: BorderRadius.circular(10),
+                                  child: Container(
+                                    // flagState: CountryFlag.DISABLE,
+                                    // defaultCountry: CscCountry.India,
+                                    // selectedItemStyle:
+                                    //     AppStyles.NormalText().copyWith(
+                                    //   color: const Color.fromARGB(
+                                    //       255, 37, 169, 176),
+                                    //   fontWeight: FontWeight.w400,
+                                    //   fontSize: 17,
+                                    // ),
+                                    // onCountryChanged: (country) {
+                                    //   setState(() {
+                                    //     //log(country.toString());
+                                    //     countryValue = country;
+                                    //     address = countryValue;
+                                    //   });
+                                    // },
+                                    // countryDropdownLabel: address,
+                                    // dropdownItemStyle:
+                                    //     AppStyles.NormalText().copyWith(
+                                    //   color: Colors.black,
+                                    //   fontWeight: FontWeight.w400,
+                                    //   fontSize: 17,
+                                    // ),
+                                    // dropdownDialogRadius: 10.0,
+                                    // countrySearchPlaceholder: address,
+                                    // dropdownHeadingStyle: const TextStyle(
+                                    //   color: Color.fromARGB(255, 37, 169, 176),
+                                    //   fontWeight: FontWeight.w400,
+                                    //   fontSize: 17,
+                                    // ),
+                                    // showCities: false,
+                                    // showStates: false,
+                                    // dropdownDecoration: BoxDecoration(
+                                    //   gradient: LinearGradient(
+                                    //     colors: [
+                                    //       Colors.black.withOpacity(0.6),
+                                    //       Colors.black.withOpacity(0.4),
+                                    //       Colors.black.withOpacity(0.4),
+                                    //     ],
+                                    //     begin: Alignment.centerLeft,
+                                    //     end: Alignment.centerRight,
+                                    //   ),
+                                      // borderRadius: BorderRadius.circular(10),
 
-                                      color:
-                                          const Color.fromARGB(255, 88, 99, 102)
-                                              .withOpacity(0.1),
-                                      border: Border.all(
-                                          color: const Color.fromARGB(
-                                                  255, 104, 184, 184)
-                                              .withOpacity(0.7),
-                                          width: 1.0),
+                                      // color:
+                                      //     const Color.fromARGB(255, 88, 99, 102)
+                                      //         .withOpacity(0.1),
+                                      // border: Border.all(
+                                      //     color: const Color.fromARGB(
+                                      //             255, 104, 184, 184)
+                                      //         .withOpacity(0.7),
+                                      //     width: 1.0),
                                       // boxShadow: [
                                       //   BoxShadow(
                                       //     blurRadius: 1.0,
@@ -277,7 +277,7 @@ class _SignUpState extends State<SignUp> {
                                     ),
                                   ),
                                 ),
-                              ),
+                              // ),
                               LoginSignUpTextField(
                                 'Contact Number',
                                 Icons.call,

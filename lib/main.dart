@@ -26,7 +26,7 @@ import 'services/bloc_observer.dart';
 import 'services/local_notifications.dart';
 
 Future<void> main() async {
-  await dotenv.load(fileName: StaticURLs.envPath);
+  // await dotenv.load(fileName: StaticURLs.envPath);
 
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -40,13 +40,13 @@ Future<void> main() async {
       systemNavigationBarColor: Color.fromARGB(0, 75, 30, 30),
     ),
   );
-  await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform, name: 'pulzion-24-app');
+  // await Firebase.initializeApp(
+  //     options: DefaultFirebaseOptions.currentPlatform, name: 'pulzion-24-app');
 
-  await remoteConfig();
+  // await remoteConfig();
 
   // Then initialize the local notification service
-  LocalNotificationService.initialize();
+  // LocalNotificationService.initialize();
   // FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
   // await Firebase.initializeApp();
   // await FirebaseNotifications.initialize();
@@ -109,7 +109,8 @@ class _Pulzion24AppState extends State<Pulzion24App>
       //stop your audio player
 
       // BlocProvider.of<GlobalParameterCubit>(context).stopSound();
-    } else if (state == AppLifecycleState.resumed) {
+    }
+    else if (state == AppLifecycleState.resumed) {
       //start or resume your audio player
       // BlocProvider.of<GlobalParameterCubit>(context).initializeAudioPlayer();
       BlocProvider.of<GlobalParameterCubit>(context).init();
@@ -128,10 +129,10 @@ class _Pulzion24AppState extends State<Pulzion24App>
     super.dispose();
   }
 
-  void initFirebase() async {
-    if (EndPoints.baseUrl != null || EndPoints.baseUrl != '') return;
-    await remoteConfig();
-  }
+  // void initFirebase() async {
+  //   if (EndPoints.baseUrl != null || EndPoints.baseUrl != '') return;
+  //   await remoteConfig();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -142,7 +143,7 @@ class _Pulzion24AppState extends State<Pulzion24App>
     //         !snapshot.data!.contains(ConnectivityResult.none);
 
     //     if (isConnected) {
-          initFirebase();
+          // initFirebase();
           return MultiBlocProvider(
             providers: [
               BlocProvider(

@@ -1,4 +1,4 @@
-import 'package:audioplayers/audioplayers.dart';
+// import 'package:audioplayers/audioplayers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Singleton {
@@ -15,7 +15,7 @@ class Singleton {
 
 class Audio {
   bool isAudioOff = false;
-  final player = AudioPlayer();
+  // final player = AudioPlayer();
 
   bool getAudioStatus() {
     return isAudioOff;
@@ -34,13 +34,13 @@ class Audio {
 
   void playClick() {
     if (!isAudioOff) {
-      player.play(AssetSource("sci-fi-click.wav"));
+      // player.play(AssetSource("sci-fi-click.wav"));
     }
   }
 
   void playError() {
     if (!isAudioOff) {
-      player.play(AssetSource("error-music.mp3"));
+      // player.play(AssetSource("error-music.mp3"));
     }
   }
 }
