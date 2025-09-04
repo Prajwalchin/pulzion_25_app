@@ -1,0 +1,41 @@
+// links for render server event ids
+Map<int, String> eventLogoImageUrlMap = {
+  18: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FDataQuest%20(1).png?alt=media&token=86429573-2c8f-456c-acd0-b064a3a35721',
+  21: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FDextrous.png?alt=media&token=b02bf3e5-9a8a-4331-85d8-5766e76925d1',
+  23: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCode%20X.png?alt=media&token=eb64dfde-18a2-498e-8625-f2b267ad98ff',
+  26: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCompute%20and%20Compete.png?alt=media&token=8b67ed67-4292-4fbb-99ed-33a13eac42bd',
+  22: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FHire%20Hustle.png?alt=media&token=8783b727-9734-4345-9268-c750ad4450b6',
+  15: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FElectroQuest.png?alt=media&token=a5ffb8f8-d804-4a1d-85e3-eb18965d9ada',
+  25: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCodelicious.png?alt=media&token=b5711198-cf90-4d48-a6e9-888fa018f9f8',
+  29: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCodelicious.png?alt=media&token=b5711198-cf90-4d48-a6e9-888fa018f9f8',
+  20: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FInsights.png?alt=media&token=1f2f5e62-cf35-4c71-ae4e-9041f9b318cf',
+  17: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FWeb%20%2B%20Android.png?alt=media&token=cb8ecfd4-be5b-4656-b963-f98bdc3bcece',
+  30: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FPaper%20Presentation.png?alt=media&token=71852a95-e52c-4f10-88aa-c96e2c007494',
+  33: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+  35: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+  31: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+  32: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+  34: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+  19: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFreeze%20the%20second.png?alt=media&token=c84760d1-ffa6-47bf-850a-5215f1ef828d',
+};
+
+// links for prod server event ids
+// Map<int, String> eventLogoImageUrlMap = {
+//   5: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FDataQuest%20(1).png?alt=media&token=86429573-2c8f-456c-acd0-b064a3a35721',
+//   7: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FDextrous.png?alt=media&token=b02bf3e5-9a8a-4331-85d8-5766e76925d1',
+//   3: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCode%20X.png?alt=media&token=eb64dfde-18a2-498e-8625-f2b267ad98ff',
+//   13: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCompute%20and%20Compete.png?alt=media&token=8b67ed67-4292-4fbb-99ed-33a13eac42bd',
+//   2: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FHire%20Hustle.png?alt=media&token=8783b727-9734-4345-9268-c750ad4450b6',
+//   4: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FElectroQuest.png?alt=media&token=a5ffb8f8-d804-4a1d-85e3-eb18965d9ada',
+//   1: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FCodelicious.png?alt=media&token=b5711198-cf90-4d48-a6e9-888fa018f9f8',
+//   12: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FInnowave_white.png?alt=media&token=3e0c78f0-f5bd-42c8-883c-1c32338ea397',
+//   9: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FInsights.png?alt=media&token=1f2f5e62-cf35-4c71-ae4e-9041f9b318cf',
+//   6: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FWeb%20%2B%20Android.png?alt=media&token=cb8ecfd4-be5b-4656-b963-f98bdc3bcece',
+//   11: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FPaper%20Presentation.png?alt=media&token=71852a95-e52c-4f10-88aa-c96e2c007494',
+//   18: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+//   14: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+//   15: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+//   17: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+//   19: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFAndoM%20QUIz%20White.png?alt=media&token=999a47d6-5cc7-4b35-afaa-22701e9380f5',
+//   10: 'https://firebasestorage.googleapis.com/v0/b/pulzion-24-app-78a5c.appspot.com/o/event_logos%2FFreeze%20the%20second.png?alt=media&token=c84760d1-ffa6-47bf-850a-5215f1ef828d',
+// };
