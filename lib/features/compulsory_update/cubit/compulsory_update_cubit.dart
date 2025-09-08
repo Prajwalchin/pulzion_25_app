@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+// import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../../constants/urls.dart';
 
@@ -16,23 +16,23 @@ class CompulsoryUpdateCubit extends Cubit<CompulsoryUpdateState> {
   }
 
   Future<void> needsUpdate() async {
-    final PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    final List<int> currentVersion = packageInfo.version
-        .split('.')
-        .map((String number) => int.parse(number))
-        .toList();
-    final List<int> enforcedVersion = getEnforcedVersion()
-        .split('.')
-        .map((String number) => int.parse(number))
-        .toList();
+    // final PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    // final List<int> currentVersion = packageInfo.version
+    //     .split('.')
+    //     .map((String number) => int.parse(number))
+    //     .toList();
+    // final List<int> enforcedVersion = getEnforcedVersion()
+    //     .split('.')
+    //     .map((String number) => int.parse(number))
+    //     .toList();
 
-    for (int i = 0; i < 3; i++) {
-      if (enforcedVersion[i] > currentVersion[i]) {
-        emit(CompulsoryUpdateNeeded());
+    // for (int i = 0; i < 3; i++) {
+    //   if (enforcedVersion[i] > currentVersion[i]) {
+    //     emit(CompulsoryUpdateNeeded());
 
-        return;
-      }
-    }
+    //     return;
+    //   }
+    // }
     emit(CompulsoryUpdateNotNeeded());
   }
 }

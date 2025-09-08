@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.pasc25app.pulzion25.pulzion_25_app"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pulzion_25_app/constants/urls.dart';
-import 'package:share_plus/share_plus.dart'; // Ensure you import the share_plus package for sharing functionality.
+// import 'package:share_plus/share_plus.dart'; // Ensure you import the share_plus package for sharing functionality.
 import 'package:pulzion_25_app/constants/images.dart'; // Replace with your correct import paths
 
 class BackgroundSliver extends StatelessWidget {
@@ -44,12 +44,12 @@ class BackgroundSliver extends StatelessWidget {
           right: MediaQuery.of(context).size.height * 0.028,
           child: InkWell(
             onTap: () {
-              Share.share(
-                '$eventDescription\n\nPulzion App: ${EndPoints.playStoreURL}',
-                subject: 'Pulzion Tech Across Ages', // Subject for sharing
-                sharePositionOrigin:
-                    const Rect.fromLTWH(0, 0, 10, 10), // Share position origin
-              );
+              // Share.share(
+              //   '$eventDescription\n\nPulzion App: ${EndPoints.playStoreURL}',
+              //   subject: 'Pulzion Tech Across Ages', // Subject for sharing
+              //   sharePositionOrigin:
+              //       const Rect.fromLTWH(0, 0, 10, 10), // Share position origin
+              // );
             },
             child: Icon(
               size: MediaQuery.of(context).size.height * 0.03,
